@@ -7,7 +7,7 @@
 class nBlock_SimpleSerial: public nBlockSimpleNode<1> {
 public:
     nBlock_SimpleSerial(PinName pinTX, PinName pinRX);
-    void triggerInput(uint32_t inputNumber, uint32_t value);
+    void triggerInput(nBlocks_Message message);
     void endFrame(void);
 private:
     Serial _ser;
